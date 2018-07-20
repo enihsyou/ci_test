@@ -2,7 +2,11 @@ package com.enihsyou.test;
 
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World");
+    private int offset;
+
+    public Main(int offset) {this.offset = offset;}
+
+    public int add(int a, int b) {
+        return a + b + offset;
     }
 }
